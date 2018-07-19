@@ -1,0 +1,5 @@
+{
+  "github": {
+    "collaborators": "https://api.github.com/repos/{0}/{1}/collaborators/{2}"
+  }
+}

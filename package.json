@@ -1,0 +1,34 @@
+{
+  "name": "GithubCollaboratorAdder",
+  "version": "1.0.0",
+  "description": "Add people to private project",
+  "main": "server.js",
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrPandemic/halite-backend.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DrPandemic/halite-backend/issues"
+  },
+  "homepage": "https://github.com/DrPandemic/halite-backend#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^6.0.0",
+    "handlebars": "^4.0.11",
+    "koa": "^2.5.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-helmet": "^4.0.0",
+    "koa-logger": "^3.2.0",
+    "koa-mount": "^3.0.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.1.4",
+    "nodemon": "^1.18.3",
+    "string-format": "^2.0.0"
+  }
+}
