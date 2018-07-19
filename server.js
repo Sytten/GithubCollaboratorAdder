@@ -2,7 +2,7 @@
 
 require('dotenv').config()
 
-if (!process.env.SECRET) {
+if (!process.env.TOKEN) {
   throw new Error('You need an .env file. Go read the readme');
 }
 
@@ -12,8 +12,6 @@ const app = new Koa();
 // Common middlewares
 app.use(require('koa-logger')());
 app.use(require('koa-helmet')());
-
-app.keys = [process.env.SECRET];
 app.use(require('koa-bodyparser')());
 
 app.use(require('koa-views')(`${__dirname}/src/views`, {
@@ -29,4 +27,4 @@ const serve = require('koa-static');
 const mount = require("koa-mount");
 app.use(mount("/public", serve("./public")));
 
-app.listen(process.env.PORT || 3000);
+app.listen(8080);

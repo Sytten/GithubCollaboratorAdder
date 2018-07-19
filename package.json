@@ -4,7 +4,7 @@
   "description": "Add people to private project",
   "main": "server.js",
   "scripts": {
-    "start": "./node_modules/.bin/nodemon index.js"
+    "start": "./node_modules/.bin/nodemon server.js"
   },
   "repository": {
     "type": "git",
